@@ -1,0 +1,82 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1000px;
+
+    margin: auto;
+}
+.main-header {
+    background-color: burlywood;
+    position: fixed;
+    top: 0;
+    width: 1000px;
+    text-align: center;
+    height: 75px;
+    border-bottom: 2px solid black;
+}
+
+.divsdiv {
+    display: flex;
+    width: 1000px;
+    margin-top: 125px;
+}
+.nav {
+    background-color: burlywood;
+    border: 1px solid black;
+    text-align: center;
+    width: 200px;
+    position: fixed;
+    top: 125px;
+    height: 250px;
+}
+.navsdiv {
+    width: fit-content;
+    position: absolute;
+}
+
+.login,
+input,
+button {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.main-div {
+    background-color: yellowgreen;
+    border: 1px solid black;
+    text-align: left;
+    width: fit-content;
+
+    margin-left: 250px;
+    word-spacing: 0px;
+
+    height: 100%;
+    position: fixed;
+    overflow: scroll;
+}
+.div1 {
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: center;
+    position: relative;
+
+    width: 730px;
+}
+table {
+    border-collapse: collapse;
+    margin: 0;
+}
+th,
+td {
+    border: 1px solid black;
+    padding-bottom: 12px;
+}
+
+.product {
+    height: 20vh;
+}
+

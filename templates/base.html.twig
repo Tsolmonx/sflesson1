@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="styles/style.css"/>
+
+        {% endblock %}
+
+        {% block javascripts %}
+
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            <header class="main-header">
+                <h1>"Төмс" компютэрийн зарын систэм</h1>
+            </header>
+            <nav class="nav">
+                <form action="login.html" method="GET" class="navsdiv">
+                    <h3 class="login">Нэвтрэх</h3>
+                    <input
+                            type="text"
+                            name="Нэр"
+                            class="name"
+                            placeholder="Хэрэглэгчийн нэр"
+                    />
+
+                    <input
+                            type="password"
+                            class="password"
+                            placeholder="Нууц үг"
+                            required
+                    />
+
+                    <button type="sub">Нэвтрэх</button>
+                </form>
+            </nav>
+        <table class="div1">
+            <thead>
+            <tr>
+                <th>
+                    <select>
+                        <option value="Төрөл">Эд анги</option>
+                        <option value="Processor">Processor</option>
+                        <option value="GPU">GPU</option>
+                        <option value="ram">RAM</option>
+                        <option value="Motherboard">Motherboard</option>
+                        <option value="Harddrive">Harddrive</option>
+                        <option value="psu">PowerSupply</option>
+                        <option value="cooler">Cooler</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="Брэнд">Брэнд</option>
+                        <option value="amd">Amd</option>
+                        <option value="intel">intel</option>
+                    </select>
+                </th>
+                <th>
+                    <select>
+                        <option value="Үзүүлэлт">Үзүүлэлт</option>
+                    </select>
+                </th>
+                <th>
+                    <div class="year">
+                        <label for="date">Он</label>
+                        <input type="month" name="month" id="date" />
+                    </div>
+                </th>
+                <th>
+                    <div class="price">
+                        <label for="number">Үнэ</label>
+                        <input
+                                type="number"
+                                name="price"
+                                id="price"
+                                min="10000"
+                                step="1000"
+                        />
+                    </div>
+                </th>
+
+                <th></th>
+            </tr>
+            </thead>
+        </table>
+
+
+        {% endblock %}
+    </body>
+</html>

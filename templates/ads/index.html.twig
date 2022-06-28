@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdsController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <table class="div1">
+        <thead>
+        <tr>
+            <th>
+                <button type="button"><strong>Төрөл</strong></button>
+            </th>
+            <th>
+                <button type="button"><strong>Брэнд</strong></button>
+            </th>
+            <th>
+                <button type="button"><strong>Үзүүлэлт</strong></button>
+            </th>
+            <th>
+                <button type="button"><strong>Ашигласан_хугацаа</strong></button>
+            </th>
+            <th>
+                <button type="button"><strong>Үнэ</strong></button>
+            </th>
+
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="product">
+            <td>Processor</td>
+            <td>Amd</td>
+            <td>Ryzen 3 2600</td>
+            <td>3 жил</td>
+            <td>1.5m</td>
+            <td><button type="button">Сагслах</button></td>
+
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+{% endblock %}
