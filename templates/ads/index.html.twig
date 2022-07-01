@@ -2,47 +2,81 @@
 
 {% block title %}Hello AdsController!{% endblock %}
 
-{% block body %}
+{% block ads %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    .div1 {
+        margin-top: 125px;
+        margin-left: 210px;
+        text-align: center;
+        position: relative;
 
-<div class="example-wrapper">
+        width: 730px;
+
+    }
+
+    .product {
+        height: 20vh;
+</style>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 0;
+            width: 730px;
+        }
+        th,
+        td {
+            border: 1px solid black;
+            padding-bottom: 12px;
+    </style>
     <table class="div1">
         <thead>
         <tr>
             <th>
-                <button type="button"><strong>Төрөл</strong></button>
+                <select>
+                    <option value="Төрөл">Эд анги</option>
+                    <option value="Processor">Processor</option>
+                    <option value="GPU">GPU</option>
+                    <option value="ram">RAM</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Harddrive">Harddrive</option>
+                    <option value="psu">PowerSupply</option>
+                    <option value="cooler">Cooler</option>
+                </select>
             </th>
             <th>
-                <button type="button"><strong>Брэнд</strong></button>
+                <select>
+                    <option value="Брэнд">Брэнд</option>
+                    <option value="amd">Amd</option>
+                    <option value="intel">intel</option>
+                </select>
             </th>
             <th>
-                <button type="button"><strong>Үзүүлэлт</strong></button>
+                <select>
+                    <option value="Үзүүлэлт">Үзүүлэлт</option>
+                </select>
             </th>
             <th>
-                <button type="button"><strong>Ашигласан_хугацаа</strong></button>
+                <div class="year">
+                    <label for="date">Он</label>
+                    <input type="month" name="month" id="date" />
+                </div>
             </th>
             <th>
-                <button type="button"><strong>Үнэ</strong></button>
+                <div class="price">
+                    <label for="number">Үнэ</label>
+                    <input
+                            type="number"
+                            name="price"
+                            id="price"
+                            min="10000"
+                            step="1000"
+                    />
+                </div>
             </th>
 
             <th></th>
         </tr>
         </thead>
-        <tbody>
-        <tr class="product">
-            <td>Processor</td>
-            <td>Amd</td>
-            <td>Ryzen 3 2600</td>
-            <td>3 жил</td>
-            <td>1.5m</td>
-            <td><button type="button">Сагслах</button></td>
-
-        </tr>
-
-        </tbody>
     </table>
-</div>
+
 {% endblock %}
